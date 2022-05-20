@@ -13,8 +13,8 @@ module.exports = {
       chainId: 1337,
     },
     mumbai: {
-      url: 'https://polygon-mumbai.infura.io/v3/500553bcf26f4de1880333dfcce56107',
-      accounts: ['2148e2f71a009228fe5b33887d8526a495845580544f5b4d6a061c0e2a9077da'],
+      url: `https://polygon-mumbai.infura.io/v3/${process.env.INFURA_ID}`,
+      accounts: [process.env.account_pk],
     },
     // polygon: {
     //   url: 'https://polygon-rpc.com/',

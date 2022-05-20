@@ -121,7 +121,7 @@ export default function NewRequest() {
                   />
                 </FormControl>
                 <FormControl id="value">
-                  <FormLabel>Amount in Ether</FormLabel>
+                  <FormLabel>Amount in MATIC</FormLabel>
                   <InputGroup>
                     <Input
                       type="number"
@@ -132,7 +132,7 @@ export default function NewRequest() {
                       }}
                       step="any"
                     />
-                    <InputRightAddon>ETH</InputRightAddon> 
+                    <InputRightAddon>MATIC</InputRightAddon> 
                   </InputGroup>
                   {inUSD ? (
                     <FormHelperText>
@@ -143,7 +143,7 @@ export default function NewRequest() {
 
                 <FormControl id="recipient">
                   <FormLabel htmlFor="recipient">
-                    Recipient Ethereum Wallet Address
+                    Recipient Polygon Wallet Address
                   </FormLabel>
                   <Input
                     name="recipient"

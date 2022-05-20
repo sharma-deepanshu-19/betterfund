@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
         provider = new ethers.providers.JsonRpcProvider();
       } else {
         provider = new ethers.providers.JsonRpcProvider(
-          'https://polygon-mumbai.infura.io/v3/500553bcf26f4de1880333dfcce56107'
+          `https://polygon-mumbai.infura.io/v3/${process.env.INFURA_ID}`
         );
       }
     }

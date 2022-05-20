@@ -129,7 +129,7 @@ export default function NewCampaign() {
                         setMinContriInUSD(Math.abs(e.target.value));
                       }}
                     />{' '}
-                    <InputRightAddon>ETH</InputRightAddon>
+                    <InputRightAddon>MATIC</InputRightAddon>
                   </InputGroup>
                   {minContriInUSD ? (
                     <FormHelperText>
@@ -172,7 +172,7 @@ export default function NewCampaign() {
                         setTargetInUSD(Math.abs(e.target.value));
                       }}
                     />
-                    <InputRightAddon>ETH</InputRightAddon>
+                    <InputRightAddon>MATIC</InputRightAddon>
                   </InputGroup>
                   {targetInUSD ? (
                     <FormHelperText>

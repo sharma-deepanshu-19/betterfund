@@ -236,12 +236,12 @@ export default function CampaignSingle({
                 <SimpleGrid columns={{ base: 1 }} spacing={{ base: 5 }}>
                   <StatsCard
                     title={"Minimum Contribution"}
-                    stat={`${minimumContribution} ETH ($${getWEIPriceInUSD(
+                    stat={`${minimumContribution} MATIC ($${getWEIPriceInUSD(
                       ETHPrice,
                       minimumContribution
                     )})`}
                     info={
-                      "You must contribute at least this much in Wei ( 1 ETH = 10 ^ 18 Wei) to become an approver"
+                      "You must contribute at least this much in Wei ( 1 MATIC = 10 ^ 18 Wei) to become an approver"
                     }
                   />
                   <StatsCard
@@ -322,7 +322,7 @@ export default function CampaignSingle({
                         fontWeight={"bold"}
                       >
                         {" "}
-                        ETH
+                        MATIC
                       </Text>
                       <Text
                         as="span"
@@ -336,7 +336,7 @@ export default function CampaignSingle({
                     </Box>
 
                     <Text fontSize={"md"} fontWeight="normal">
-                      target of {target} ETH ($
+                      target of {target} MATIC ($
                       {getWEIPriceInUSD(ETHPrice, target)})
                     </Text>
                     <Progress
@@ -368,7 +368,7 @@ export default function CampaignSingle({
                   <form onSubmit={handleSubmit(onSubmit)}>
                     <FormControl id="value">
                       <FormLabel>
-                        Amount in Ether you want to contribute
+                        Amount in Matic you want to contribute
                       </FormLabel>
                       <InputGroup>
                         {" "}
@@ -382,7 +382,7 @@ export default function CampaignSingle({
                           step="any"
                           min="0"
                         />{" "}
-                        <InputRightAddon>ETH</InputRightAddon> 
+                        <InputRightAddon>MATIC</InputRightAddon> 
                       </InputGroup>
                       {amountInUSD ? (
                         <FormHelperText>

@@ -181,7 +181,7 @@ function CampaignCard({
                   fontWeight={'bold'}
                 >
                   {' '}
-                  ETH
+                  MATIC
                 </Text>
                 <Text
                   as='span'
@@ -195,7 +195,7 @@ function CampaignCard({
               </Box>
 
               <Text fontSize={'md'} fontWeight='normal'>
-                target of {ethers.utils.formatUnits(target, 'ether')} ETH ($
+                target of {ethers.utils.formatUnits(target, 'ether')} MATIC ($
                 {getWEIPriceInUSD(ethPrice, target)})
               </Text>
               <Progress

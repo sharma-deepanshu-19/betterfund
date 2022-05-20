@@ -49,7 +49,7 @@ export async function getServerSideProps({ params }) {
     provider = new ethers.providers.JsonRpcProvider();
   } else if (process.env.ENVIRONMENT === 'testnet') {
     provider = new ethers.providers.JsonRpcProvider(
-      'https://polygon-mumbai.infura.io/v3/500553bcf26f4de1880333dfcce56107'
+      `https://polygon-mumbai.infura.io/v3/${process.env.INFURA_ID}`
     );
   }
 
@@ -147,7 +147,7 @@ const RequestRow = ({
       <Td>{id} </Td>
       <Td>{request.description}</Td>
       <Td isNumeric>
-        {ethers.utils.formatEther(request.value, 'ether')}ETH ($
+        {ethers.utils.formatEther(request.value, 'ether')} MATIC ($
         {getWEIPriceInUSD(ETHPrice, request.value)})
       </Td>
       <Td>
@@ -344,8 +344,7 @@ export default function Requests({
                 fontWeight={'bold'}
                 fontSize='lg'
               >
-                {' '}
-                ETH
+                MATIC
               </Text>
               <Text
                 as='span'
