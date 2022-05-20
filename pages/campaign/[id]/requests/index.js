@@ -49,7 +49,7 @@ export async function getServerSideProps({ params }) {
     provider = new ethers.providers.JsonRpcProvider();
   } else if (process.env.ENVIRONMENT === 'testnet') {
     provider = new ethers.providers.JsonRpcProvider(
-      `https://polygon-mumbai.infura.io/v3/${process.env.INFURA_ID}`
+      `https://polygon-mumbai.infura.io/v3/500553bcf26f4de1880333dfcce56107`
     );
   }
 
@@ -344,6 +344,7 @@ export default function Requests({
                 fontWeight={'bold'}
                 fontSize='lg'
               >
+                {' '}
                 MATIC
               </Text>
               <Text
