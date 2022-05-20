@@ -51,8 +51,11 @@ export async function getServerSideProps() {
     CampaignFactory.abi,
     provider
   );
-  const campaigns = await contract.getDeployedCampaigns();
-
+  let campaigns = await contract.getDeployedCampaigns();
+ 
+  if (campaigns && campaigns.length > 0) {
+      campaigns = campaigns.reverse()
+    }
   return {
     props: { campaigns },
   };
@@ -321,7 +324,7 @@ export default function Home({ campaigns }) {
           <HStack spacing={2}>
             <SkeletonCircle size='4' />
             <Heading as='h2' size='lg'>
-              How BetterFund Works
+              How D-donation Works
             </Heading>
           </HStack>
           <Divider marginTop='4' />
@@ -352,7 +355,7 @@ export default function Home({ campaigns }) {
             For any queries raise an issue on{' '}
             <Link
               color='teal.500'
-              href='https://github.com/'
+              href='https://github.com/Nitin1rajput/d-donation'
               isExternal
             >
               the Github Repo <ExternalLinkIcon mx='2px' />
