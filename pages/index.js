@@ -54,7 +54,7 @@ export async function getServerSideProps() {
   let campaigns = await contract.getDeployedCampaigns();
  
   if (campaigns && campaigns.length > 0) {
-      campaigns = campaigns.reverse()
+    campaigns = campaigns.slice().reverse()
     }
   return {
     props: { campaigns },
