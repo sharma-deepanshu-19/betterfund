@@ -47,15 +47,15 @@ export default function Footer() {
               zIndex: -1,
             }}
           >
-            <NextLink href='/'>🪙 D-donation</NextLink>
+            <NextLink href='/'>Betterfund</NextLink>
           </Box>
         </Heading>
         <Stack direction={'row'} spacing={6}>
           <NextLink href='/'>Home</NextLink>
-          <Link href={'https://github.com/'} isExternal>
+          <Link href={'#'} isExternal>
             Github
           </Link>
-          <Link href={'mailto:nitin3emails@gmail.com'} isExternal>
+          <Link href={'#'} isExternal>
             Contact
           </Link>
         </Stack>
@@ -76,7 +76,7 @@ export default function Footer() {
           align={{ base: 'center', md: 'center' }}
         >
           <Text>
-            🌐 Made by Nitin, Rahul Gusain, Shubham Kumar, Rishabh Sharma
+            🌐 Made by Harshit Sharma, Deepanshu Sharma
           </Text>
         </Container>
       </Box>

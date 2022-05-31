@@ -248,7 +248,7 @@ export default function Home({ campaigns }) {
   return (
     <div>
       <Head>
-        <title>D-donation</title>
+        <title>Betterfund</title>
         <meta
           name='description'
           content='Transparent Crowdfunding in Blockchain'
@@ -324,7 +324,7 @@ export default function Home({ campaigns }) {
           <HStack spacing={2}>
             <SkeletonCircle size='4' />
             <Heading as='h2' size='lg'>
-              How D-donation Works
+              How Betterfund Works
             </Heading>
           </HStack>
           <Divider marginTop='4' />
@@ -355,7 +355,7 @@ export default function Home({ campaigns }) {
             For any queries raise an issue on{' '}
             <Link
               color='teal.500'
-              href='https://github.com/Nitin1rajput/d-donation'
+              href='#'
               isExternal
             >
               the Github Repo <ExternalLinkIcon mx='2px' />
